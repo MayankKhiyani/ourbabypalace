@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: url('baby-bg-pattern.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo at Top Left */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: 100px; /* Big enough for 500x500 PNG */
+  height: auto;
+}
+
+/* Title and Subheading */
+.page-title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-title h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.page-title .tagline {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Segoe UI Semibold', sans-serif;
+  color: #444;
+}
+
+/* Main Centered Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Message Box */
+.message-box {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* WhatsApp Contact Section */
+.whatsapp-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #e7f9ee;
+  border: 1px solid #b2dfdb;
+  border-radius: 50px;
+  padding: 0.7rem 1rem; /* ↓ reduced padding */
+ 
+}
+
+.whatsapp-text {
+  flex: 1;
+  text-align: left;
+}
+
+.whatsapp-text p {
+  font-size: 0.92rem;
+  line-height: 1.3;
+  margin: 0.15rem 0; /* ↓ tight vertical spacing */
+  color: #000;
+}
+
+.whatsapp-icon img {
+  width: 40px;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-icon:hover img {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+  .whatsapp-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .whatsapp-text {
+    text-align: center;
+  }
+}
